@@ -81,3 +81,7 @@ echo $people[2]['email'];
 
 // Encode to JSON
 var_dump(json_encode($people));
+
+// Decode from JSON
+$jsonobj = '{"first_name":"Brad","last_name": "Traversy","email":"brad@gmail.com"}';
+var_dump(json_decode($jsonobj));
