@@ -12,7 +12,7 @@ $numbers = [1, 2, 3, 4, 5];
 $colors = ['red', 'blue', 'green'];
 
 // Using the array function to create an array of numbers
-$numbers = [1, 2, 3, 4, 5];
+$numbers = array(1, 2, 3, 4, 5);
 
 // Outputting values from an array
 echo $numbers[0];
