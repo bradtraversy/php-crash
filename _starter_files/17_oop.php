@@ -42,4 +42,8 @@ class Cat extends Animal {
     parent::__construct($name, $type);
     $this->ownerName = $ownerName;
   }  
+
+  function get_ownerName(){
+    return $this->ownerName;
+  }
 }
