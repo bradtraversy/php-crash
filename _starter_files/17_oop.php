@@ -15,5 +15,19 @@ class Animal {
     $this->behaviour = 0;
   }
   
+  function get_name(){
+    return $this->name;
+  }
 
+  function get_type(){
+    return $this->type;
+  }
+
+  function get_behaviour(){
+    return $this->behaviour;
+  }
+
+  function set_behaviour($x=1){
+    $this->behaviour += $x;
+  }
 }
