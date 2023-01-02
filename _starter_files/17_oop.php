@@ -9,5 +9,11 @@ class Animal {
   public $type;
   public $behaviour;
 
+  public function __construct($name, $type){
+    $this->name = $name;
+    $this->type = $type;
+    $this->behaviour = 0;
+  }
+  
 
 }
