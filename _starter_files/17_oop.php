@@ -35,3 +35,11 @@ class Animal {
 
 $qoplon = new Animal("Qoplon", "dog");
 // echo $qoplon->get_behaviour();//0
+
+
+class Cat extends Animal {
+  public function __construct($name, $type, $ownerName){
+    parent::__construct($name, $type);
+    $this->ownerName = $ownerName;
+  }  
+}
