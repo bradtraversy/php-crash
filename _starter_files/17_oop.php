@@ -5,7 +5,7 @@
   From PHP5 onwards you can write PHP in either a procedural or object oriented way. OOP consists of classes that can hold "properties" and "methods". Objects can be created from classes.
 */
 class Animal {
-  // public $name;
+  private $name;
   // public $type;
   // public $behaviour;
 
@@ -38,6 +38,7 @@ $qoplon = new Animal("Qoplon", "dog");
 
 
 class Cat extends Animal {
+  protected $ownerName;
   public function __construct($name, $type, $ownerName){
     parent::__construct($name, $type);
     $this->ownerName = $ownerName;
@@ -47,3 +48,8 @@ class Cat extends Animal {
     return $this->ownerName;
   }
 }
+
+$baroq = new Cat("Baroq", "cat", "Satoshi Nakamoto");
+echo $baroq->get_ownerName();//Satoshi Nakamoto
+echo $baroq->get_name();//Baroq
+echo $baroq->name;//error becaue name is private
