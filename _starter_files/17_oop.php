@@ -31,3 +31,5 @@ class Animal {
     $this->behaviour += $x;
   }
 }
+
+$qoplon = new Animal("Qoplon", "dog");
