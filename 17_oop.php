@@ -72,5 +72,5 @@ class Employee extends User {
   }
 }
 
-$employee1 = new Employee('John','johndoe@gmail.com','123456','Manager');
+$employee1 = new employee('John','johndoe@gmail.com','123456','Manager');
 echo $employee1->getTitle();
