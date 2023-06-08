@@ -61,7 +61,7 @@ var_dump($user1);
   It is achieved by creating a new class that extends an existing class.
 */
 
-class employee extends User {
+class Employee extends User {
   public function __construct($name, $email, $password, $title) {
     parent::__construct($name, $email, $password);
     $this->title = $title;
@@ -72,5 +72,5 @@ class employee extends User {
   }
 }
 
-$employee1 = new employee('John','johndoe@gmail.com','123456','Manager');
+$employee1 = new Employee('John','johndoe@gmail.com','123456','Manager');
 echo $employee1->getTitle();
