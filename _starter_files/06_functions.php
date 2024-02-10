@@ -12,5 +12,5 @@
     // code to be executed
   }
 
-  - Functions have their own local scope as opposed to global scope
+  - Functions have their own local scope as opposed to global scope !
 */
