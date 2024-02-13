@@ -26,7 +26,7 @@ registerUser();
 // Adding params
 function registerUser2($username)
 {
-  echo "User ${username} has been registered!";
+  echo "User $username has been registered!";
 }
 
 // Pass in an argument
